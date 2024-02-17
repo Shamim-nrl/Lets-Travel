@@ -21,8 +21,7 @@ for (const btn of allBtn) {
 
 
         e.target.parentNode.parentNode.style.backgroundColor="gray"
-        // e.target.setAttribute(parentNode.parentNode="disabled")
-        // e.target.setAttribute(parentNode.parentNode="enabled")
+        // e.target.innerText.setAttribute("disabled")
 
 
         const budget = document.getElementById("budget").innerText;
@@ -58,7 +57,9 @@ function grandTotal(category) {
 
     if (category === "bus") {
         setInnerText('grand-total', convertTotalCost + 100)
-      
+        // document.getElementById("bus").setAttribute("disabled")
+        // document.getElementById("train").setAttribute("enabled")
+        // document.getElementById("flight").setAttribute("enabled")
     } else if (category === "train") {
         setInnerText('grand-total', convertTotalCost - 200)
       
